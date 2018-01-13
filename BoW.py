@@ -76,6 +76,7 @@ print('{} features -> {} variance'.format(numfeature, variance))
 img_vec = np.zeros((len(images), numfeature), "float32")
 for i in range(len(images)):
     if des_list[i][1] is not None:
+        #tmp = whiten(des_list[i][1])
         code, dis = vq(des_list[i][1],codebook)
         for w in code:
             img_vec[i][w] += 1
@@ -94,6 +95,7 @@ sift = cv2.xfeatures2d.SIFT_create()
 kpts, des = sift.detectAndCompute(gray, None)
 
 query_vec = np.zeros((1, numfeature), "float64")
+#des = whiten(des)
 code, dis = vq(des,codebook)
 for w in code:
     query_vec[0][w] += 1
