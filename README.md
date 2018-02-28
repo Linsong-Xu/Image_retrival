@@ -15,3 +15,13 @@
 <div align=center>
      <img src='https://github.com/Linsong-Xu/Image_retrival/blob/master/image/8.png'>
 </div>
+
+## VLAD method
+
+<div align=center>
+     <img src='https://github.com/Linsong-Xu/Image_retrival/blob/master/image/vlad7.png'>
+</div>
+
+<div align=center>
+     <img src='https://github.com/Linsong-Xu/Image_retrival/blob/master/image/vlad8.png'>
+</div>
