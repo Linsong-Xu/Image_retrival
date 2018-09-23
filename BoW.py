@@ -82,7 +82,7 @@ for i in range(len(images)):
             img_vec[i][w] += 1
 
 df = np.sum( (img_vec > 0) * 1, axis = 0)
-idf = np.array(np.log((1.0*10000+1) / (1.0*df + 1)), 'float64')
+idf = np.array(np.log((1.0*len(pics)+1) / (1.0*df + 1)), 'float64')
 img_vec = img_vec*idf
 img_vec = preprocessing.normalize(img_vec, norm='l2')
 
