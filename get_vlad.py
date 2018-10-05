@@ -23,7 +23,7 @@ if __name__ == '__main__':
 	print('have load SIFTdes')
 
 	images = get_images_path(train_path, pics)
-	vlad, each_img = get_VLAD_descriptors(SIFTdes, images[0:1000])
+	vlad, each_img = get_VLAD_descriptors(SIFTdes, images)
 
 	file = parameter_path + 'vlad.pickle'
 	with open(file, 'wb') as f:
